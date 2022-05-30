@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#gridsize {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  z-index: 2;
+  padding: 0.25rem;
+  color: white;
+  display: flex;
+}
+
+#gridsize > p {
+  margin: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.ReactVirtualized__Grid__innerScrollContainer { 
+  border: 1px solid black;
+}
+
+.cell {
+  border: 1px solid black;
+  aspect-ratio: 1;
+  min-width: 10px;
+}
+
+.cell.active {
+  background-color: black;
+}
